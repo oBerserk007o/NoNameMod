@@ -18,7 +18,6 @@ public class NoNameMod
 {
     public static final String MOD_ID = "nonamemod";
 
-    // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
 
@@ -30,12 +29,10 @@ public class NoNameMod
 
         eventBus.addListener(this::setup);
 
-        // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-        // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
