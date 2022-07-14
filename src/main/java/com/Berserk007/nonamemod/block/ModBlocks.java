@@ -1,6 +1,7 @@
 package com.Berserk007.nonamemod.block;
 
 import com.Berserk007.nonamemod.NoNameMod;
+import com.Berserk007.nonamemod.item.ModCreativeModeTab;
 import com.Berserk007.nonamemod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -21,7 +22,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
         () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                .strength(5f).requiresCorrectToolForDrops()),CreativeModeTab.TAB_MISC);
+                .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.NONAMEMOD_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
