@@ -21,8 +21,16 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, NoNameMod.MOD_ID);
 
     public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
-        () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+        () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL)
                 .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.NONAMEMOD_TAB);
+
+    public static final RegistryObject<Block> PYRO_CONDENSATE_ORE = registerBlock("pyro_condensate_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST)
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.NONAMEMOD_TAB);
+
+    public static final RegistryObject<Block> ELECTRO_CONDENSATE_ORE = registerBlock("electro_condensate_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST)
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.NONAMEMOD_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

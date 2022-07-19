@@ -1,8 +1,16 @@
 {
   "item.nonamemod.steel_ingot": "Steel Ingot",
   "item.nonamemod.steel_beed": "Steel Beed",
+  "item.nonamemod.fireball_staff": "Fireball Staff",
+  "item.nonamemod.lightning_staff": "Lightning Staff",
+  "item.nonamemod.pyro_condensate": "Pyro Condensate",
+  "item.nonamemod.raw_pyro_condensate": "Raw Pyro Condensate",
+  "item.nonamemod.electro_condensate": "Electro Condensate",
+  "item.nonamemod.raw_electro_condensate": "Raw Electro Condensate",
 
   "block.nonamemod.steel_block": "Steel Block",
+  "block.nonamemod.pyro_condensate_ore": "Pyro Condensate Ore",
+  "block.nonamemod.electro_condensate_ore": "Electro Condensate Ore",
 
   "itemGroup.nonamemodtab": "No Name Mod"
 }

@@ -1,7 +1,8 @@
 package com.Berserk007.nonamemod.item;
 
 import com.Berserk007.nonamemod.NoNameMod;
-import net.minecraft.world.item.CreativeModeTab;
+import com.Berserk007.nonamemod.item.custom.FireballStaffItem;
+import com.Berserk007.nonamemod.item.custom.LightningStaffItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,6 +18,26 @@ public class ModItems {
 
     public static final RegistryObject<Item> STEEL_BEED = ITEMS.register("steel_beed",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NONAMEMOD_TAB)));
+
+    public static final RegistryObject<Item> PYRO_CONDENSATE= ITEMS.register("pyro_condensate",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NONAMEMOD_TAB)));
+
+    public static final RegistryObject<Item> RAW_PYRO_CONDENSATE = ITEMS.register("raw_pyro_condensate",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NONAMEMOD_TAB)));
+
+    public static final RegistryObject<Item> ELECTRO_CONDENSATE = ITEMS.register("electro_condensate",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NONAMEMOD_TAB)));
+
+    public static final RegistryObject<Item> RAW_ELECTRO_CONDENSATE = ITEMS.register("raw_electro_condensate",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NONAMEMOD_TAB)));
+
+
+
+    public static final RegistryObject<Item> FIREBALL_STAFF = ITEMS.register("fireball_staff",
+            () -> new FireballStaffItem(new Item.Properties().tab(ModCreativeModeTab.NONAMEMOD_TAB).durability(100)));
+
+    public static final RegistryObject<Item> LIGHTNING_STAFF = ITEMS.register("lightning_staff",
+            () -> new LightningStaffItem(new Item.Properties().tab(ModCreativeModeTab.NONAMEMOD_TAB).durability(100)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
