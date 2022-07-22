@@ -1,5 +1,8 @@
 package com.Berserk007.nonamemod.item.custom;
 
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -11,16 +14,30 @@ import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class LightningStaffItem extends Item {
     public LightningStaffItem(Properties pProperties) {
         super(pProperties);
+    }
+
+    @Override
+    public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag isAdvanced) {
+        if(Screen.hasShiftDown()){
+            tooltipComponents.add(new TranslatableComponent("tooltip.nonamemod.lightning_staff"));
+        }
+        else {
+            tooltipComponents.add(new TranslatableComponent("tooltip.nonamemod.shift"));
+        }
     }
 
     public static @NotNull BlockHitResult getPlayerPOVHitResult(Level pLevel, Player pPlayer, ClipContext.@NotNull Fluid pFluidMode) {

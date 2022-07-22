@@ -1,8 +1,8 @@
 {
   "item.nonamemod.steel_ingot": "Steel Ingot",
   "item.nonamemod.steel_beed": "Steel Beed",
-  "item.nonamemod.fireball_staff": "Fireball Staff",
-  "item.nonamemod.lightning_staff": "Lightning Staff",
+  "item.nonamemod.fireball_staff": "§cFireball Staff§r",
+  "item.nonamemod.lightning_staff": "§dLightning Staff§r",
   "item.nonamemod.pyro_condensate": "Pyro Condensate",
   "item.nonamemod.raw_pyro_condensate": "Raw Pyro Condensate",
   "item.nonamemod.electro_condensate": "Electro Condensate",
@@ -15,5 +15,10 @@
   "block.nonamemod.electro_condensate_ore": "Electro Condensate Ore",
   "block.nonamemod.item_generator_block": "Item Generator Block",
 
-  "itemGroup.nonamemodtab": "No Name Mod"
+  "itemGroup.nonamemodtab": "No Name Mod",
+  "tooltip.nonamemod.shift": "Press §6SHIFT§r for more information",
+  "tooltip.nonamemod.fireball_staff": "§9Shoot a fireball to explode your foes!§r",
+  "tooltip.nonamemod.lightning_staff": "§9Strike lightning upon your foes!§r",
+  "tooltip.nonamemod.upgraded_coal": "§9Just like coal, but 4x as efficient!§r",
+  "tooltip.nonamemod.item_generator_block": "§9Summon a random item!§r"
 }
