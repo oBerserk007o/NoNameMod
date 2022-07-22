@@ -32,6 +32,9 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_ELECTRO_CONDENSATE = ITEMS.register("raw_electro_condensate",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NONAMEMOD_TAB)));
 
+    public static final RegistryObject<Item> CHILI_PEPPER = ITEMS.register("chili_pepper",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NONAMEMOD_TAB).food(ModFoods.CHILI_PEPPER)));
+
 
     public static final RegistryObject<Item> UPGRADED_COAL = ITEMS.register("upgraded_coal",
             () -> new UpgradedCoalItem(new Item.Properties().tab(ModCreativeModeTab.NONAMEMOD_TAB)));
