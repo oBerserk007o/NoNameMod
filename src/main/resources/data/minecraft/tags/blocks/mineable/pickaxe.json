@@ -3,6 +3,7 @@
   "values": [
     "nonamemod:steel_block",
     "nonamemod:pyro_condensate_ore",
-    "nonamemod:electro_condensate_ore"
+    "nonamemod:electro_condensate_ore",
+    "nonamemod:item_generator_block"
   ]
 }

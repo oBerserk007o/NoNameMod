@@ -42,11 +42,11 @@ public class LightningStaffItem extends Item {
     public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level level, Player player, @NotNull InteractionHand interactionHand) {
         player.getCooldowns().addCooldown(this, 100);
         player.getItemInHand(interactionHand).hurtAndBreak(1, player, (Player) -> Player.broadcastBreakEvent(Player.getUsedItemHand()));
-        HitResult hitresult = getPlayerPOVHitResult(level, player, ClipContext.Fluid.ANY);
+        HitResult hitresult = getPlayerPOVHitResult(level, player, ClipContext.Fluid.NONE);
         LightningBolt lightningbolt = EntityType.LIGHTNING_BOLT.create(level);
         assert lightningbolt != null;
         lightningbolt.moveTo(hitresult.getLocation());
-        lightningbolt.setDamage(15.0f);
+        lightningbolt.setDamage(10.0f);
         lightningbolt.setCause(player instanceof ServerPlayer ? (ServerPlayer)player : null);
         level.addFreshEntity(lightningbolt);
         level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.TRIDENT_THUNDER,

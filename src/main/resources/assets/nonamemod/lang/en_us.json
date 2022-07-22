@@ -7,10 +7,12 @@
   "item.nonamemod.raw_pyro_condensate": "Raw Pyro Condensate",
   "item.nonamemod.electro_condensate": "Electro Condensate",
   "item.nonamemod.raw_electro_condensate": "Raw Electro Condensate",
+  "item.nonamemod.upgraded_coal": "Upgraded Coal",
 
   "block.nonamemod.steel_block": "Steel Block",
   "block.nonamemod.pyro_condensate_ore": "Pyro Condensate Ore",
   "block.nonamemod.electro_condensate_ore": "Electro Condensate Ore",
+  "block.nonamemod.item_generator_block": "Item Generator Block",
 
   "itemGroup.nonamemodtab": "No Name Mod"
 }

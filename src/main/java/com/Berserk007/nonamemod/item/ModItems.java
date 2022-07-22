@@ -3,6 +3,7 @@ package com.Berserk007.nonamemod.item;
 import com.Berserk007.nonamemod.NoNameMod;
 import com.Berserk007.nonamemod.item.custom.FireballStaffItem;
 import com.Berserk007.nonamemod.item.custom.LightningStaffItem;
+import com.Berserk007.nonamemod.item.custom.UpgradedCoalItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -32,6 +33,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NONAMEMOD_TAB)));
 
 
+    public static final RegistryObject<Item> UPGRADED_COAL = ITEMS.register("upgraded_coal",
+            () -> new UpgradedCoalItem(new Item.Properties().tab(ModCreativeModeTab.NONAMEMOD_TAB)));
 
     public static final RegistryObject<Item> FIREBALL_STAFF = ITEMS.register("fireball_staff",
             () -> new FireballStaffItem(new Item.Properties().tab(ModCreativeModeTab.NONAMEMOD_TAB).durability(100)));
