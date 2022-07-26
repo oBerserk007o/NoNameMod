@@ -10,6 +10,18 @@
   "item.nonamemod.upgraded_coal": "Upgraded Coal",
   "item.nonamemod.chili_pepper": "Chili Pepper",
 
+  "item.nonamemod.pyro_condensate_sword": "Pyro Condensate Sword",
+  "item.nonamemod.pyro_condensate_axe": "Pyro Condensate Axe",
+  "item.nonamemod.pyro_condensate_pickaxe": "Pyro Condensate Pickaxe",
+  "item.nonamemod.pyro_condensate_hoe": "Pyro Condensate Hoe",
+  "item.nonamemod.pyro_condensate_shovel": "Pyro Condensate Shovel",
+
+  "item.nonamemod.electro_condensate_sword": "Electro Condensate Sword",
+  "item.nonamemod.electro_condensate_axe": "Electro Condensate Axe",
+  "item.nonamemod.electro_condensate_pickaxe": "Electro Condensate Pickaxe",
+  "item.nonamemod.electro_condensate_hoe": "Electro Condensate Hoe",
+  "item.nonamemod.electro_condensate_shovel": "Electro Condensate Shovel",
+
   "block.nonamemod.steel_block": "Steel Block",
   "block.nonamemod.pyro_condensate_ore": "Pyro Condensate Ore",
   "block.nonamemod.electro_condensate_ore": "Electro Condensate Ore",
