@@ -9,6 +9,7 @@
   "item.nonamemod.raw_electro_condensate": "Raw Electro Condensate",
   "item.nonamemod.upgraded_coal": "Upgraded Coal",
   "item.nonamemod.chili_pepper": "Chili Pepper",
+  "item.nonamemod.flee_stick": "Flee Stick",
 
   "item.nonamemod.pyro_condensate_sword": "Pyro Condensate Sword",
   "item.nonamemod.pyro_condensate_axe": "Pyro Condensate Axe",
@@ -32,5 +33,6 @@
   "tooltip.nonamemod.fireball_staff": "§9Shoot a fireball to explode your foes!§r",
   "tooltip.nonamemod.lightning_staff": "§9Strike lightning upon your foes!§r",
   "tooltip.nonamemod.upgraded_coal": "§9Just like coal, but 4x as efficient!§r",
+  "tooltip.nonamemod.flee_stick": "§9Hit your enemy to flee combat!§r",
   "tooltip.nonamemod.item_generator_block": "§9Summon a random item!§r"
 }

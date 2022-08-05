@@ -1,6 +1,6 @@
 {
 "parent":"item/handheld",
 "textures": {
-  "layer0": "nonamemod:item/fireball_staff"
+  "layer0": "nonamemod:item/flee_stick"
   }
 }
