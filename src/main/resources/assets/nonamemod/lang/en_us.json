@@ -34,5 +34,8 @@
   "tooltip.nonamemod.lightning_staff": "§9Strike lightning upon your foes!§r",
   "tooltip.nonamemod.upgraded_coal": "§9Just like coal, but 4x as efficient!§r",
   "tooltip.nonamemod.flee_stick": "§9Hit your enemy to flee combat!§r",
-  "tooltip.nonamemod.item_generator_block": "§9Summon a random item!§r"
+  "tooltip.nonamemod.item_generator_block": "§9Summon a random item!§r",
+
+  "enchantment.nonamemod.gripper": "Gripper",
+  "enchantment.nonamemod.gripper_tool": "Gripper"
 }

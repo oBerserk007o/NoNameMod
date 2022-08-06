@@ -1,6 +1,7 @@
 package com.Berserk007.nonamemod;
 
 import com.Berserk007.nonamemod.block.ModBlocks;
+import com.Berserk007.nonamemod.enchantment.ModEnchantments;
 import com.Berserk007.nonamemod.item.ModItems;
 import com.Berserk007.nonamemod.util.ModTags;
 import net.minecraft.world.level.block.Blocks;
@@ -27,6 +28,9 @@ public class NoNameMod
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+
+        ModEnchantments.register(eventBus);
+
         ModTags.register();
 
         eventBus.addListener(this::setup);

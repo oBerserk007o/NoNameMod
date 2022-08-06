@@ -38,7 +38,7 @@ public class FleeStickItem extends SwordItem {
         target.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 200), attacker);
         target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200), attacker);
         attacker.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200), attacker);
-        attacker.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 20), attacker);
+        attacker.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 60), attacker);
         return super.hurtEnemy(stack, target, attacker);
     }
 }
