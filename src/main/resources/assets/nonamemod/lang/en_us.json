@@ -27,6 +27,7 @@
   "block.nonamemod.pyro_condensate_ore": "Pyro Condensate Ore",
   "block.nonamemod.electro_condensate_ore": "Electro Condensate Ore",
   "block.nonamemod.item_generator_block": "Item Generator Block",
+  "block.nonamemod.lava_lamp": "Lava Lamp",
 
   "itemGroup.nonamemodtab": "No Name Mod",
   "tooltip.nonamemod.shift": "Press §6SHIFT§r for more information",
@@ -34,8 +35,8 @@
   "tooltip.nonamemod.lightning_staff": "§9Strike lightning upon your foes!§r",
   "tooltip.nonamemod.upgraded_coal": "§9Just like coal, but 4x as efficient!§r",
   "tooltip.nonamemod.flee_stick": "§9Hit your enemy to flee combat!§r",
-  "tooltip.nonamemod.item_generator_block": "§9Summon a random item!§r",
+  "tooltip.nonamemod.item_generator_block": "§9Summons a random item!§r",
+  "tooltip.nonamemod.lava_lamp": "§9Emits light when lava is poured in!§r",
 
-  "enchantment.nonamemod.gripper": "Gripper",
-  "enchantment.nonamemod.gripper_tool": "Gripper"
+  "enchantment.nonamemod.gripper": "Gripper"
 }

@@ -19,7 +19,7 @@ public class UpgradedCoalItem extends Item {
     }
 
     @Override
-    public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag isAdvanced) {
+    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltipComponents, TooltipFlag isAdvanced) {
         if(Screen.hasShiftDown()){
             tooltipComponents.add(new TranslatableComponent("tooltip.nonamemod.upgraded_coal"));
         }

@@ -23,7 +23,7 @@ public class ItemGeneratorBlock extends Block {
 
     Random random = new Random();
 
-    public @NotNull InteractionResult use(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult hit) {
+    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         int randomID = this.random.nextInt(1324) + 1;
         ItemEntity itemEntity = new ItemEntity(level, pos.getX(), pos.getY() + 0.5f, pos.getZ(), new ItemStack(Item.byId(randomID)));
         player.sendMessage(new TextComponent("Block was used! Item: " + Item.byId(randomID) + ", ID:" + randomID), player.getUUID());

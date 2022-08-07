@@ -2,6 +2,7 @@ package com.Berserk007.nonamemod.block;
 
 import com.Berserk007.nonamemod.NoNameMod;
 import com.Berserk007.nonamemod.block.custom.ItemGeneratorBlock;
+import com.Berserk007.nonamemod.block.custom.LavaLampBlock;
 import com.Berserk007.nonamemod.item.ModCreativeModeTab;
 import com.Berserk007.nonamemod.item.ModItems;
 import net.minecraft.network.chat.Component;
@@ -36,9 +37,16 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST)
                     .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.NONAMEMOD_TAB);
 
+
     public static final RegistryObject<Block> ITEM_GENERATOR_BLOCK = registerBlock("item_generator_block",
             () -> new ItemGeneratorBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.NONAMEMOD_TAB, "tooltip.nonamemod.item_generator_block");
+
+    public static final RegistryObject<Block> LAVA_LAMP_BLOCK = registerBlock("lava_lamp",
+            () -> new LavaLampBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(3f).requiresCorrectToolForDrops()
+                    .lightLevel((state) -> state.getValue(LavaLampBlock.FULL) ? 15 : 0)),
+            ModCreativeModeTab.NONAMEMOD_TAB, "tooltip.nonamemod.lava_lamp");
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block,
                                                                      CreativeModeTab tab, String tooltipKey) {

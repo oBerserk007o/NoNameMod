@@ -25,7 +25,7 @@ public class FireballStaffItem extends Item {
     }
 
     @Override
-    public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag isAdvanced) {
+    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltipComponents, TooltipFlag isAdvanced) {
         if(Screen.hasShiftDown()){
             tooltipComponents.add(new TranslatableComponent("tooltip.nonamemod.fireball_staff"));
         }
@@ -35,7 +35,7 @@ public class FireballStaffItem extends Item {
     }
 
     @Override
-    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, @NotNull InteractionHand interactionHand) {
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
         player.getItemInHand(interactionHand).hurtAndBreak(1, player, (Player) -> Player.broadcastBreakEvent(Player.getUsedItemHand()));
         level.playSound(player, player.getOnPos(), SoundEvents.FIRECHARGE_USE, SoundSource.NEUTRAL, 0.5F, 0.4F / (level.getRandom().nextFloat() * 0.4F + 0.8F));
         player.getCooldowns().addCooldown(this, 100);
@@ -51,8 +51,7 @@ public class FireballStaffItem extends Item {
                 player.getX(),
                 player.getY() + 1,
                 player.getZ());
-        largefireball.
-        level.addFreshEntity(largefireball);
+        largefireball.level.addFreshEntity(largefireball);
         return InteractionResultHolder.sidedSuccess(itemStack, level.isClientSide());
     }
 }

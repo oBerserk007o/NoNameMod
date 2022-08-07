@@ -31,7 +31,7 @@ public class LightningStaffItem extends Item {
     }
 
     @Override
-    public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag isAdvanced) {
+    public void appendHoverText(ItemStack stack, Level level, List<Component> tooltipComponents, TooltipFlag isAdvanced) {
         if(Screen.hasShiftDown()){
             tooltipComponents.add(new TranslatableComponent("tooltip.nonamemod.lightning_staff"));
         }
@@ -40,7 +40,7 @@ public class LightningStaffItem extends Item {
         }
     }
 
-    public static @NotNull BlockHitResult getPlayerPOVHitResult(Level pLevel, Player pPlayer, ClipContext.@NotNull Fluid pFluidMode) {
+    public static @NotNull BlockHitResult getPlayerPOVHitResult(Level pLevel, Player pPlayer, ClipContext.Fluid pFluidMode) {
         float f = pPlayer.getXRot();
         float f1 = pPlayer.getYRot();
         Vec3 vec3 = pPlayer.getEyePosition();
@@ -56,7 +56,7 @@ public class LightningStaffItem extends Item {
     }
 
     @Override
-    public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level level, Player player, @NotNull InteractionHand interactionHand) {
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
         player.getCooldowns().addCooldown(this, 100);
         player.getItemInHand(interactionHand).hurtAndBreak(1, player, (Player) -> Player.broadcastBreakEvent(Player.getUsedItemHand()));
         HitResult hitresult = getPlayerPOVHitResult(level, player, ClipContext.Fluid.NONE);
