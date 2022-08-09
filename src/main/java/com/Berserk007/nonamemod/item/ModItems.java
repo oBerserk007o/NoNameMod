@@ -1,6 +1,7 @@
 package com.Berserk007.nonamemod.item;
 
 import com.Berserk007.nonamemod.NoNameMod;
+import com.Berserk007.nonamemod.block.ModBlocks;
 import com.Berserk007.nonamemod.item.custom.FireballStaffItem;
 import com.Berserk007.nonamemod.item.custom.FleeStickItem;
 import com.Berserk007.nonamemod.item.custom.LightningStaffItem;
@@ -34,7 +35,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NONAMEMOD_TAB)));
 
     public static final RegistryObject<Item> CHILI_PEPPER = ITEMS.register("chili_pepper",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NONAMEMOD_TAB).food(ModFoods.CHILI_PEPPER)));
+            () -> new ItemNameBlockItem(ModBlocks.CHILI_PEPPER_BUSH.get(), new Item.Properties().tab(ModCreativeModeTab.NONAMEMOD_TAB).food(ModFoods.CHILI_PEPPER)));
 
 
     public static final RegistryObject<Item> UPGRADED_COAL = ITEMS.register("upgraded_coal",

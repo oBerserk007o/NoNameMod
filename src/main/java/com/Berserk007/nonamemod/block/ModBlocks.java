@@ -1,6 +1,7 @@
 package com.Berserk007.nonamemod.block;
 
 import com.Berserk007.nonamemod.NoNameMod;
+import com.Berserk007.nonamemod.block.custom.ChiliPepperBushBlock;
 import com.Berserk007.nonamemod.block.custom.ItemGeneratorBlock;
 import com.Berserk007.nonamemod.block.custom.LavaLampBlock;
 import com.Berserk007.nonamemod.item.ModCreativeModeTab;
@@ -10,6 +11,8 @@ import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -36,6 +39,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> ELECTRO_CONDENSATE_ORE = registerBlock("electro_condensate_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST)
                     .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.NONAMEMOD_TAB);
+
+
+    public static final RegistryObject<Block> CHILI_PEPPER_BUSH = BLOCKS.register("chili_pepper_bush",
+            () -> new ChiliPepperBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks()
+                    .noCollission().noOcclusion().sound(SoundType.SWEET_BERRY_BUSH)));
 
 
     public static final RegistryObject<Block> ITEM_GENERATOR_BLOCK = registerBlock("item_generator_block",
